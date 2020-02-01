@@ -1,0 +1,229 @@
+/* New Style Sheet for Tech Skills Hack.'s Learning Platform
+
+@ Start Date: 15/12/19 */
+@import './colors';
+
+body {
+    font-family: "Open Sans", Arial, sans-serif !important;
+}
+
+.tsh-primary {
+    background: $theme_primary !important;
+}
+
+.tsh-secondary {
+    background: $theme_secondary !important;
+}
+
+.tsh-primary-text {
+    color: $theme_primary;
+}
+
+.tsh-welcome-banner {
+    background-blend-mode: overlay;
+    background-color: initial !important;
+    background-repeat: no-repeat !important;
+    // background: url("../../images/bg.jpg"), url("./../../assets/icons/coding-background-texture.jpg"), linear-gradient(180deg, $theme_primary 0%, #450d7ae1 70%) !important;
+    color: #fff !important;
+    // margin-top: 0px;
+    max-height: 100%;
+    background-size: 100% 100%;
+}
+
+.tsh-logo-before {
+    width: 130px !important;
+    margin: 70px 120px;
+    transition: all .5s;
+}
+
+.tsh-logo-after {
+    width: 70px !important;
+    margin: 5px 120px;
+    transition: all .5s;
+}
+
+.tsh-shadow-max {
+    box-shadow: 10px 27px 28px rgba(100, 99, 99, 0.12), 10px 2px 28px rgba(80, 78, 78, 0.123), -6px 2px 29px rgba(90, 87, 87, 0.096), -19px 2px 29px rgba(71, 68, 68, 0.116);
+}
+
+.tsh-container {
+    margin: 20px 0px 0px 71px !important;
+    padding: 100px 0px 0px 10px !important;
+
+    ::selection {
+        background-color: $theme_secondary !important;
+        color: $theme_primary !important;
+    }
+
+
+    h1 {
+        padding: 0px 0px 10px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.3em;
+    }
+
+    p {
+        line-height: 1.9em;
+        color: #d4ccff !important;
+        font-size: 17px;
+    }
+
+
+}
+
+.tsh-btn-wrapper {
+    display: inline-block;
+
+    a {
+        color: #ffffff !important;
+        border-width: 10px !important;
+        border-color: #09e1c0;
+        border-radius: 100px;
+        letter-spacing: 1px;
+        font-size: 16px;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        padding-left: 0.7em;
+        padding-right: 2em;
+        // background-color: #ffcc00;
+        box-shadow: 0px 10px 50px 5px #f8e08865, 1px 1px 1px rgba(0, 0, 0, 0.5);
+        padding: 1.3em 1.1em;
+        -webkit-transition: all .4s;
+        -moz-transition: all .4s;
+        line-height: 1.7em !important;
+        transition: all .4s;
+        text-decoration: none;
+
+        i {
+            -webkit-transition: all .4s;
+            -moz-transition: all .4s;
+            transition: all .4s;
+            padding-left: .3em;
+        }
+    }
+
+    a:hover {
+        letter-spacing: 2px;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+        font-weight: 500;
+        -webkit-transition: all .4s;
+        -moz-transition: all .4s;
+        transition: all .4s;
+
+        i {
+            -webkit-transition: all .4s;
+            -moz-transition: all .4s;
+            transition: all .4s;
+            padding-left: 1em;
+        }
+    }
+}
+
+.tsh-courses-container {
+    h1 {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.3em;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 1.3em;
+    }
+}
+
+.tsh-padding-lr-large {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0px 50px;
+}
+
+.tsh-padding-lr-medium {
+    padding-left: 100px;
+    padding-right: 70px;
+    margin: 0px 20px;
+}
+
+.tsh-bar-tool {
+    width: 37px !important;
+    padding: 2px 8px;
+    margin: 18px 3px;
+    background-color: $theme_secondary;
+}
+
+.tsh-container-img {
+    padding: 110px 50px;
+    margin-right: 0px;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+
+
+// .tsh-padding {
+//     padding: 86px 0px !important;
+// }
+
+.tsh-bold {
+    font-weight: bold !important;
+}
+
+// .tsh-padding-lr-64 {
+//     padding: 0px 50px !important;
+// }
+
+.tsh-navbar {
+    transition: all .3s;
+}
+
+// .tsh-banner-img img {
+//     max-width: 473.81px;
+//     max-height: 509.91px;
+//     margin: 64px;
+//     max-width: 100%;
+// }
+
+// .tsh-banner-img {
+//     max-width: 500px;
+//     height: auto;
+//     margin:0 80px ;
+// }
+
+// For Mobile
+@media (max-width:600px) {
+    .tsh-container {
+        margin: 20px 0px 0px 10px !important;
+        padding: 100px 0px 0px 20px !important;
+
+        h1 {
+            padding: 0px 0px 10px;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 1.4em;
+        }
+
+        p {
+            line-height: 1.9em;
+            color: #d4ccff !important;
+            font-size: 16px;
+        }
+    }
+
+    .tsh-padding-lr-large {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 0px 25px;
+    }
+
+    .tsh-padding-lr-medium {
+        margin: 20px 0px 0px 10px !important;
+        padding: 100px 20px 0px 20px !important;
+
+    }
+}
